@@ -7,6 +7,7 @@
         mc:Ignorable="d"
         Title="Login" Height="300" Width="300">
     <Grid>
-        
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Height="24" Margin="111,10,0,0" TextWrapping="Wrap" Text="Login 성공" VerticalAlignment="Top" Width="71"/>
+
     </Grid>
 </Window>
