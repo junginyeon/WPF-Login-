@@ -21,12 +21,12 @@ namespace WPF_Login.View
     /// </summary>
     public partial class Main : Window
     {
-        public PassWordCmd pswCmd { get; set; }
+        //public PassWordCmd pswCmd { get; set; }
         public Main()
         {
             InitializeComponent();
-            pswCmd = new PassWordCmd();
-            DataContext = this;
+            //pswCmd = new PassWordCmd();
+            this.DataContext = new LoginViewModel();
         }
     }
 }
