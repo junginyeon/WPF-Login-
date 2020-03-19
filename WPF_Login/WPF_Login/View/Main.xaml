@@ -7,6 +7,7 @@
         mc:Ignorable="d"
         Title="Main" Height="300" Width="300">
     <Grid>
+<<<<<<< HEAD
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="10*"/>
@@ -27,6 +28,11 @@
             <TextBox Text="{Binding LoginPWD}" x:Name="LoginPWD" Grid.Row="2" Grid.Column="2" Margin="8" Width="100" HorizontalAlignment="Left"/>
             <Button Command="{Binding LoginCommand}" x:Name="btnLogin" Grid.Row="3" Grid.Column="2" Content="로그인" Margin="8" Width="80" HorizontalAlignment="Right"/>
         </Grid>
+=======
+        <PasswordBox x:Name="psWord" Width="200" Height="20" Margin="49,68,43,181"></PasswordBox>
+        <Button Command="{Binding pswCmd}" CommandParameter="{Binding ElementName=psWord}" Height="50" Width="50">ok</Button>
+        <TextBox x:Name="Id" HorizontalAlignment="Left" Height="40" Margin="49,10,0,0" TextWrapping="Wrap" Text="{Binding Id}" VerticalAlignment="Top" Width="200"/>
+>>>>>>> master
 
     </Grid>
 </Window>
