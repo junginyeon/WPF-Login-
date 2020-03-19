@@ -11,6 +11,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using WPF_Login.BL;
+using WPF_Login.ViewModel;
 
 namespace WPF_Login.View
 {
@@ -23,8 +25,8 @@ namespace WPF_Login.View
         public Main()
         {
             InitializeComponent();
-            DataContext = this;
             pswCmd = new PassWordCmd();
+            DataContext = this;
         }
     }
 }

@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Input;
 using System.Windows.Controls;
+using System.Windows.Input;
 
-namespace WPF_Login
+namespace WPF_Login.BL
 {
     public class PassWordCmd : ICommand
     {
-        public string Password { get; set; }
+        public static string Password { get; set; }
         #region ICommand Member
         public event EventHandler CanExecuteChanged;
 

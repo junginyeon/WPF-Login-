@@ -7,8 +7,9 @@
         mc:Ignorable="d"
         Title="Main" Height="300" Width="300">
     <Grid>
-        <PasswordBox x:Name="psWord" Width="200" Height="20" Margin="49,23,43,226"></PasswordBox>
+        <PasswordBox x:Name="psWord" Width="200" Height="20" Margin="49,68,43,181"></PasswordBox>
         <Button Command="{Binding pswCmd}" CommandParameter="{Binding ElementName=psWord}" Height="50" Width="50">ok</Button>
+        <TextBox x:Name="Id" HorizontalAlignment="Left" Height="40" Margin="49,10,0,0" TextWrapping="Wrap" Text="{Binding Id}" VerticalAlignment="Top" Width="200"/>
 
     </Grid>
 </Window>
