@@ -56,8 +56,11 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="BL\Command.cs" />
+    <Compile Include="BL\PasswordHelper.cs" />
+    <Compile Include="PassWordCmd.cs" />
     <Compile Include="ViewModel\LoginViewModel.cs" />
     <Compile Include="View\Login.xaml.cs">
+      <SubType>Code</SubType>
       <DependentUpon>Login.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\Main.xaml.cs">

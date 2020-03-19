@@ -10,21 +10,19 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace WPF_Login.View
+namespace WPF_Login
 {
     /// <summary>
-    /// Main.xaml에 대한 상호 작용 논리
+    /// MainWindow.xaml에 대한 상호 작용 논리
     /// </summary>
-    public partial class Main : Window
+    public partial class MainWindow : Window
     {
-        public PassWordCmd pswCmd { get; set; }
-        public Main()
+        public MainWindow()
         {
             InitializeComponent();
-            DataContext = this;
-            pswCmd = new PassWordCmd();
         }
     }
 }

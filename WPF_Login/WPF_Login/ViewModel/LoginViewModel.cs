@@ -6,13 +6,14 @@ using System.Threading.Tasks;
 using WPF_Login.BL;
 using WPF_Login.View;
 using System.Windows;
+using System.Windows.Controls;
 
 namespace WPF_Login.ViewModel
 {
     class LoginViewModel
     {
-        public string Id { get; set; }
-        public string Pwd { get; set; }
+        public string LoginID { get; set; }
+        public string LoginPWD { get; set; }
         public Command LoginCommand { get; set; }
 
         public LoginViewModel()
@@ -21,11 +22,7 @@ namespace WPF_Login.ViewModel
         }
         private void executeLogin(object obj)
         {
-            if(Id=="root" && Pwd == "1234")
-            {
-                Login page = new Login();
-                page.ShowDialog();
-            }
+            
         }
         private bool canexecuteLogin(object arg)
         {
