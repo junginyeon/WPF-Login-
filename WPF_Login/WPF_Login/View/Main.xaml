@@ -24,7 +24,7 @@
             </Grid.ColumnDefinitions>
             <TextBlock Margin="12" Grid.Row="1" Grid.Column="1" Text="아이디" FontSize="13" HorizontalAlignment="Center"/>
             <TextBlock Margin="12" Grid.Row="2" Grid.Column="1" Text="비밀번호" FontSize="13" HorizontalAlignment="Center"/>
-            <TextBox x:Name="Id" Grid.Row="1" Grid.Column="2" HorizontalAlignment="center" Height="20" TextWrapping="Wrap" Text="{Binding Id}" Width="110" Margin="3,13,3,14"/>
+            <TextBox x:Name="Id" Grid.Row="1" Grid.Column="2" HorizontalAlignment="center" Height="20" TextWrapping="Wrap" Text="{Binding Id}" Width="110" Margin="3,13,3,14" />
             <PasswordBox Grid.Row="2" Grid.Column="2" ff:PasswordBoxAssistant.BindPassword="true" ff:PasswordBoxAssistant.BoundPassword="{Binding Path=Password, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" x:Name="Pwd" Width="110" Height="20" Margin="3,12,3,16"></PasswordBox>
             <Button Command="{Binding LoginCommand}" CommandParameter="{Binding ElementName=Pwd}" Grid.Row="3" Grid.Column="2" Content="로그인" Margin="8" Width="80" Height="25" HorizontalAlignment="Right"></Button>
 
