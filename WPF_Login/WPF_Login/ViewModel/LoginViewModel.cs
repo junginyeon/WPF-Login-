@@ -14,6 +14,7 @@ namespace WPF_Login.ViewModel
         public static string Id { get; set; }
         public static string Pwd { get; set; }
         public static PassWordCmd pswCmd { get; set; }
+        public static string Password { get; set; }
 
         #region Commands
         #region LoginCommand
@@ -27,15 +28,30 @@ namespace WPF_Login.ViewModel
             }
         }
         private void LoginBtn()
-        {
-            pswCmd = new PassWordCmd();
-            if (Pwd == "1")
+        {        
+            if (Id == "1" && Pwd=="1")
             {
                 System.Windows.MessageBox.Show("ok");
             }
-
         }
-        #endregion      
+        #endregion
+        #region
+        public void Execute(object parameter)
+        {
+            PasswordBox boxPass = (PasswordBox)parameter;
+            Password = boxPass.Password;
+            Pwd = Password;
+            /*if (Password == "1234")
+            {
+                System.Windows.MessageBox.Show("Password OK");
+            }
+            else
+            {
+                System.Windows.MessageBox.Show("Password No");
+            }*/
+        }
+
+        #endregion            
         #endregion
     }
 }
