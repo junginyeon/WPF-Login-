@@ -28,30 +28,14 @@ namespace WPF_Login.ViewModel
             }
         }
         private void LoginBtn()
-        {        
-            if (Id == "1" && Pwd=="1")
+        {
+            if (Id == "a" &&Password == "1")
             {
                 System.Windows.MessageBox.Show("ok");
             }
         }
         #endregion
-        #region
-        public void Execute(object parameter)
-        {
-            PasswordBox boxPass = (PasswordBox)parameter;
-            Password = boxPass.Password;
-            Pwd = Password;
-            /*if (Password == "1234")
-            {
-                System.Windows.MessageBox.Show("Password OK");
-            }
-            else
-            {
-                System.Windows.MessageBox.Show("Password No");
-            }*/
-        }
-
-        #endregion            
+                   
         #endregion
     }
 }

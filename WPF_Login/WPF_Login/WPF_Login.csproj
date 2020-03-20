@@ -57,7 +57,7 @@
     </ApplicationDefinition>
     <Compile Include="BL\Command.cs" />
     <Compile Include="BL\DelegateCommand.cs" />
-    <Compile Include="BL\PassWordCmd.cs" />
+    <Compile Include="BL\PasswordBoxAssistant.cs" />
     <Compile Include="ViewModel\LoginViewModel.cs" />
     <Compile Include="ViewModel\VIewModelBase.cs" />
     <Compile Include="View\Login.xaml.cs">
