@@ -24,12 +24,10 @@
             </Grid.ColumnDefinitions>
             <TextBlock Margin="12" Grid.Row="1" Grid.Column="1" Text="아이디" FontSize="13" HorizontalAlignment="Center"/>
             <TextBlock Margin="12" Grid.Row="2" Grid.Column="1" Text="비밀번호" FontSize="13" HorizontalAlignment="Center"/>
-            <TextBox Text="{Binding LoginID}" x:Name="LoginID" Grid.Row="1" Grid.Column="2" Margin="8" Width="100" HorizontalAlignment="Left"/>
-            <TextBox Text="{Binding LoginPWD}" x:Name="LoginPWD" Grid.Row="2" Grid.Column="2" Margin="8" Width="100" HorizontalAlignment="Left"/>
-            <Button Command="{Binding LoginCommand}" x:Name="btnLogin" Grid.Row="3" Grid.Column="2" Content="로그인" Margin="8" Width="80" HorizontalAlignment="Right"/>
+            <TextBox x:Name="Id" Grid.Row="1" Grid.Column="2" HorizontalAlignment="center" Height="20" TextWrapping="Wrap" Text="{Binding Id}" Width="110" Margin="3,13,3,14"/>
+            <PasswordBox Grid.Row="2" Grid.Column="2" ff:PasswordBoxAssistant.BindPassword="true" ff:PasswordBoxAssistant.BoundPassword="{Binding Path=Password, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" x:Name="Pwd" Width="110" Height="20" Margin="3,12,3,16"></PasswordBox>
+            <Button Command="{Binding LoginCommand}" CommandParameter="{Binding ElementName=Pwd}" Grid.Row="3" Grid.Column="2" Content="로그인" Margin="8" Width="80" Height="25" HorizontalAlignment="Right"></Button>
+
         </Grid>
-        <PasswordBox ff:PasswordBoxAssistant.BindPassword="true" ff:PasswordBoxAssistant.BoundPassword="{Binding Path=Password, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" x:Name="Pwd" Width="200" Height="20" Margin="49,97,43,152"></PasswordBox>
-        <Button Command="{Binding LoginCommand}" CommandParameter="{Binding ElementName=Pwd}" Height="50" Width="50" Margin="64,162,178,57">ok</Button>
-        <TextBox x:Name="Id" HorizontalAlignment="Left" Height="40" Margin="49,37,0,0" TextWrapping="Wrap" Text="{Binding Id}" VerticalAlignment="Top" Width="200"/>
     </Grid>
 </Window>
